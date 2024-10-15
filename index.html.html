@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>School Forms - How to Make</title>
+        <style type="text/css">
+            body {
+                background-color: rgba(196, 197, 197, 0.914);
+                font-family: "Sofadi One", sans-serif;
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            
+            fieldset {
+              background-color: rgba(196, 197, 197, 0.914);
+              text-align: center;
+            }
+             
+            legend {
+              background-color: rgba(196, 197, 197, 0.914);
+              color: rgb(0, 0, 0);
+              padding: 5px 10px;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            
+            <h1>Travel Registration</h1>
+            <hr>
+                <fieldset>
+                    <legend>Information</legend>
+                    <!--dang this is first name-->
+                    <label for="first-name">First name:</label>
+                    <input type="text" id="first-name" name="frame" placeholder="Enter your first name"><br>
+                    <!--dang this is last name-->
+                    <label for="last-name">Last name:</label>
+                    <input type="text" id="last-name" name="lname" placeholder="Enter your last name"><br>
+                    <!--this is email-->
+                    <label for="Email">Email address:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Enter your email"><br>
+                    <!--this is Username-->
+                    <label for="Username">Username:</label>
+                    <input type="text" id="Username" name="Uname" placeholder="Enter your Username"><br>
+                    <!--this is Password-->
+                    <label for="Password">Password:</label>
+                    <input type="password" id="Password" name="Pword" placeholder="Enter your Password"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Favorite Philippine Vacation spot?</legend>
+                    <input type="checkbox" id="Baguio" name="Baguio" value="Baguio">
+                    <label for="Baguio">Baguio</label><br>
+                    <input type="checkbox" id="Subic" name="Subic" value="Subic">
+                    <label for="Subic">Subic</label><br>
+                    <input type="checkbox" id="Tagaytay" name="Tagaytay" value="Tagaytay">
+                    <label for="Tagaytay">Tagaytay</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>have you seen a Big fluffy cat?</legend>
+                    <input type="radio" id="yes" name="like" value="yes">
+                    <label for="yes">yes</label>
+                    <input type="radio" id="no" name="like" value="no">
+                    <label for="no">no</label>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>Comments</legend>
+                    <textarea name="Comments" rows="5" cols="60"></textarea>
+                </fieldset>
+                
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+        </form>
+    </body>
+</html>
